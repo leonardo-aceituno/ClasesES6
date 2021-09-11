@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clases en ES6</title>
+
+    <!-- CDN Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <section class='m-5'>
+        <h4 class='fs-2 '>Impuestos</h4>
+
+        <table class="table table-borderless w-50">
+            <tr>
+
+                <td class='w-25'><label for="nombre" class="form-label">Nombre</label></td>
+                <td><input type="text" class="form-control" id="nombre"></td>
+
+            </tr>
+            <tr>
+                <td class='w-25'><label for="montoAnual" class="form-label">Monto bruto anual</label></td>
+                <td><input type="number" class="form-control" id="montoAnual"></td>
+            </tr>
+            <tr>
+                <td class='w-25'><label for="deducible" class="form-label">Deducible</label></td>
+                <td><input type="number" class="form-control" id="deducible"></td>
+            </tr>
+            <tr>
+                <td class='text-end' colspan="2">
+                    <button type="button" class="btn btn-primary" id="calcular">Calcular</button>
+                </td>
+            </tr>
+            <tr>
+                <td class='w-25'><label for="resultado" class="form-label">Impuesto</label></td>
+                <td><input type="number" class="form-control" id="resultado" disabled></td>
+            </tr>
+        </table>
+        <hr>
+    </section>
+
+    <section class='m-5' id=usuarios> </section>
+
+
+
+    <!-- bootstrap.bundle.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="src/main.js" type='module'></script>
+</body>
+
+</html>
